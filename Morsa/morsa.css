@@ -3,6 +3,9 @@
     height: 200px;
     border-style: solid ; /*Borda do quadrado*/
     border-color: black; /*Cor da borda*/
+    background-color: rgb(187, 74, 9);
+    border-radius: 10px;
+    margin: 1px;
 }
 
 .grid{
@@ -10,8 +13,8 @@
     flex-flow: row wrap; /*Serve para que assim que o square chegue ao limite da página, ele vá para baixo*/
     justify-content: center; /*Coloca no centro*/
     align-content: center;
-    width: 618px;
-    height: 618px;
+    width: 630px;
+    height: 630px;
     
 }
 
@@ -20,8 +23,59 @@
     background-size: cover;
 }
 
-h2, h1{
+h2, h1, #titulo{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+}
+
+#botao{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+button{
+    font-size: 20px;
+    font-family: inherit;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#centralizar{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    border-style: solid;
+    width: 300px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#corpo{
+    background-color: rgb(175, 72, 12);
+    border-style: solid;
+    width: 900px;
+    height: 800px;
+}
+
+h1{
+    background-color: white;
 }
