@@ -1,0 +1,27 @@
+.square{
+    width: 200px; /*Tamanho do quadrado*/
+    height: 200px;
+    border-style: solid ; /*Borda do quadrado*/
+    border-color: black; /*Cor da borda*/
+}
+
+.grid{
+    display: flex; /* Serve para deixar em um layout, eles ficaram um ao lado do outro */
+    flex-flow: row wrap; /*Serve para que assim que o square chegue ao limite da página, ele vá para baixo*/
+    justify-content: center; /*Coloca no centro*/
+    align-content: center;
+    width: 618px;
+    height: 618px;
+    
+}
+
+.mole{
+    background-image: url('mole.png');
+    background-size: cover;
+}
+
+h2, h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
