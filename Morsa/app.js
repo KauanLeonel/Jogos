@@ -32,9 +32,11 @@ function iniciarJogo(){
       //Passa em cima do quadrado (addEventListener('mousedown')), ou seja, toda vez que clicar ele vai fazer o if
       if (square.id === hitPosition) { //Se o id do quadrado for o mesmo que o clicado ele vai aumentar o result
         result++
+        /*square.style.backgroundImage = "url('./broken.png')";*/
         score.textContent = result //O textContent obtem o texto do HTML
         hitPosition = null //Assim que ele aumenta o result, o hitPosition se torna nulo, pq aí a pessoa não clica várias vezes
       }
+ 
     })
   })
 
@@ -62,6 +64,7 @@ function iniciarJogo(){
         novoBotao.remove();
         iniciarJogo()
         currentTime = tempo
+        result = 0;
       })
       novoBotao.addEventListener('click', () =>{
         novoBotao.remove()

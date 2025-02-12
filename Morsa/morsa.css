@@ -3,9 +3,12 @@
     height: 200px;
     border-style: solid ; /*Borda do quadrado*/
     border-color: black; /*Cor da borda*/
-    background-color: rgb(187, 74, 9);
+    background-color: #bb4a09;
     border-radius: 10px;
     margin: 1px;
+    background-image: url('./hole.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .grid{
@@ -15,6 +18,8 @@
     align-content: center;
     width: 630px;
     height: 630px;
+    border-style: solid;
+    background-color: #8b3808;
     
 }
 
@@ -28,6 +33,7 @@ h2, h1, #titulo{
     align-items: center;
     justify-content: center;
     margin: 10px;
+    border-radius: 10px;
 }
 
 #botao{ 
@@ -56,6 +62,10 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-style: solid;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 h1{
@@ -67,15 +77,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('./grama.png');
 }
 
 #corpo{
     background-color: rgb(175, 72, 12);
     border-style: solid;
     width: 900px;
-    height: 850px;
+    height: 950px;
+    background-image: url('./earth.png');
 }
 
 h1{
     background-color: white;
+}
+
+novoBotao{
+    border-radius: 10px;
 }
