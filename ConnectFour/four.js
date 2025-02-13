@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', () =>{ //Faz com que o DOM carregue primeiro e não haja confusão no código
-    
+  
+  iniciar.addEventListener('click', () =>{
+      iniciar.remove()
+
+      iniciarJogo()
+
+  })
+   function iniciarJogo(){
     //VÁRIAVEIS
     const squares = document.querySelectorAll('.grid div') //Pega todos os quadrados e coloca em um array
     const result = document.querySelector('#result') // Pega o resultado
@@ -21,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () =>{ //Faz com que o DOM carregu
         //FUNÇÕES
         function checkBoard(){
             for(let y = 0; y < winningArrays.length; y++){
-                const square1 = squares[winningArrays[y][0]];
-                const square2 = squares[winningArrays[y][1]];
+                const square1 = squares[winningArrays[y][0]];//Toda vez que acontece algum movimento ele verifica se alguém ganhou
+                const square2 = squares[winningArrays[y][1]];//Ele vai no array com a posição y e verifica cada num (o segundo valor)
                 const square3 = squares[winningArrays[y][2]];
                 const square4 = squares[winningArrays[y][3]];
         
@@ -44,13 +51,13 @@ document.addEventListener('DOMContentLoaded', () =>{ //Faz com que o DOM carregu
             }
         }
 
-    for (let i = 0; i < squares.length; i++) {
-        squares[i].onclick = () => {
+    for (let i = 0; i < squares.length; i++) { //percorre o número de quadrados
+        squares[i].onclick = () => { //Caso alguém click no quadrado
           //if the square below your current square is taken, you can go ontop of it
-          if (squares[i + 7].classList.contains('taken') &&!squares[i].classList.contains('taken')) {
+          if (squares[i + 7].classList.contains('taken') &&!squares[i].classList.contains('taken')) { //Verifica se é possível, taken é tipo a verificação
             if (currentPlayer == 1) {
-              squares[i].classList.add('taken')
-              squares[i].classList.add('player-one')
+              squares[i].classList.add('taken') //Adiciona a verificação
+              squares[i].classList.add('player-one') //Define o quadrado como sendo do player 1
               currentPlayer = 2
               displayCurrentPlayer.innerHTML = currentPlayer
             } else if (currentPlayer == 2){
@@ -59,10 +66,10 @@ document.addEventListener('DOMContentLoaded', () =>{ //Faz com que o DOM carregu
               currentPlayer = 1
               displayCurrentPlayer.innerHTML = currentPlayer        
             } 
-          } else alert('cant go here')
+          } else alert('Lugar impróprio')
           checkBoard()
         }
       }
-      
+    }
     })
 
