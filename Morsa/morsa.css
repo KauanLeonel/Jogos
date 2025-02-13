@@ -17,7 +17,7 @@
     justify-content: center; /*Coloca no centro*/
     align-content: center;
     width: 630px;
-    height: 630px;
+    height: 730px;
     border-style: solid;
     background-color: #8b3808;
     
@@ -84,7 +84,7 @@ body{
     background-color: rgb(175, 72, 12);
     border-style: solid;
     width: 900px;
-    height: 950px;
+    height: 1050px;
     background-image: url('./earth.png');
 }
 
@@ -95,3 +95,4 @@ h1{
 novoBotao{
     border-radius: 10px;
 }
+
