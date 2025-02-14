@@ -1,0 +1,45 @@
+#jogos{
+    width: 1200px;
+    height: 1050px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#cabecalho{
+    height: 600px;
+    width: auto;
+}
+div{
+    border-style: solid;
+}
+
+.jogo{
+    height: 400px;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.imagem{
+    width: auto;
+    height: 300px;
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+} 
+
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor original */
+  }
+
+  .imagem h2{
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+  }
+
